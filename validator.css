@@ -1,0 +1,9 @@
+html,
+body {
+  width: 800px;
+  min-height: 100px;
+}
+
+.panel {
+  padding: 5px;
+}

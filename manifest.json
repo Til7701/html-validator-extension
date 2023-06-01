@@ -1,0 +1,34 @@
+{
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Shows HTML validator output for active tab",
+    "default_popup": "validator.html",
+    "default_icon": {
+      "19": "icons/icon.svg",
+      "38": "icons/icon.svg"
+    }
+  },
+  "description": "Shows HTML validator output for active tab.",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+  "homepage_url": "https://github.com/Til7701/html-validator-extension",
+  "manifest_version": 2,
+  "name": "HTML Validator",
+  "version": "0.0.1",
+  "permissions": [
+    "<all_urls>",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "snitch.js"
+      ]
+    }
+  ]
+}
