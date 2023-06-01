@@ -30,5 +30,10 @@
         "snitch.js"
       ]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tilman@holube.de"
+    }
+  }
 }
